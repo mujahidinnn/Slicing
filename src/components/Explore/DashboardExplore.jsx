@@ -1,0 +1,32 @@
+import React from 'react'
+import CreateProjectCard from './CreateProjectCard'
+import ProjectList from './ProjectList'
+import ProjectSearch from './ProjectSearch'
+import { projects } from '../../constant'
+import { useSearchParams } from 'react-router-dom'
+
+function DashboardExplore() {
+	const [searchParams, setSearchParams] = useSearchParams('')
+	const search = searchParams.get('search') ?? ''
+
+	function changeSearchParams(search) {
+		setSearchParams({ search })
+	}
+
+	const filteredProject = projects.filter((project) => {
+		return project.title.toLowerCase().includes(search.toLowerCase())
+	})
+
+	return (
+		<div className='flex flex-col pt-5 px-32 w-full h-full bg-gray-200'>
+			<ProjectSearch
+				handleChange={changeSearchParams}
+				search={search}
+			/>
+			<CreateProjectCard />
+			<ProjectList filteredProject={filteredProject} />
+		</div>
+	)
+}
+
+export default DashboardExplore

@@ -1,0 +1,38 @@
+export const projects = [
+	{
+		id: 1,
+		program: "AI TALENT",
+		title: "Website Marketplace Barang Bekas",
+		category: "Teknologi",
+		desc: "Website ini bertujuan untuk menjadi wadah bagi mahasiswa yang ingin",
+		hacker: 4,
+		hipster: 3,
+	},
+	{
+		id: 2,
+		title: "Sistem Absensi Berbasis Mobile",
+		program: "AI TALENT",
+		category: "Teknologi",
+		desc: "Aplikasi mobile untuk sistem absensi secara digital yang sangat praktis",
+		hacker: 3,
+		hipster: 2,
+	},
+	{
+		id: 3,
+		title: "Takoyaki Yummy Food",
+		program: "CHEF TALENT",
+		category: "Kuliner",
+		desc: "Salah satu makanan dari jepang yang terbuat dari daging cumi-cumi dengan",
+		hacker: 5,
+		hipster: 1,
+	},
+	{
+		id: 4,
+		title: "Wakatobi Diving Spot",
+		program: "DIVER TALENT",
+		category: "Wisata",
+		desc: "Aktivitas menyelam (Diving) didampingi Diver Professional bersertifikat",
+		hacker: 8,
+		hipster: 2,
+	},
+];
