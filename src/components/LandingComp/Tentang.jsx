@@ -7,7 +7,7 @@ function Tentang() {
   const [modal, setModal] = useState(false);
 
   const toogle = () => {
-    setModal(!modal);
+    setModal(true);
   };
 
   return (
@@ -121,7 +121,7 @@ function Tentang() {
           );
         })}
       </div>
-      {modal ? <PopupRegister /> : null}
+      {modal ? <PopupRegister setModal={setModal} /> : null}
       <div className="text-center text-[#22A6B3] mb-10">
         <button onClick={toogle}>
           <a href="#">Lihat lebih banyak ➔</a>
