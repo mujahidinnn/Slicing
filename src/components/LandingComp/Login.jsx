@@ -4,6 +4,8 @@ import lock from "../../assets/icons/padlock 1.svg";
 import visibleIcon from "../../assets/icons/visible.svg";
 import invisibleIcon from "../../assets/icons/invisible.svg";
 
+import { Link } from "react-router-dom";
+
 function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -81,12 +83,14 @@ function Login(props) {
           </div>
           <a href="#">Lupa Password?</a>
         </div>
-        <button
-          className="w-full mt-5 text-white bg-[#22A6B3] hover:bg-[#1A7F89] py-3 font-bold rounded-full"
-          onClick={handleSubmit}
-        >
-          MASUK
-        </button>
+        <Link to="/dashboard/explore">
+          <button
+            className="w-full mt-5 text-white bg-[#22A6B3] hover:bg-[#1A7F89] py-3 font-bold rounded-full"
+            onClick={handleSubmit}
+          >
+            MASUK
+          </button>
+        </Link>
       </form>
     </div>
   );
