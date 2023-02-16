@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Popup = ({ setModalOn, setChoice, onClose }) => {
   const handleOKClick = () => {
@@ -27,12 +28,14 @@ const Popup = ({ setModalOn, setChoice, onClose }) => {
             Yakin ingin keluar ?
           </div>
           <div className="flex absolute right-8 bottom-6">
+            <Link to="/">
             <button
               onClick={handleOKClick}
               className="rounded-xl px-9 py-2 text-white bg-green-600"
-            >
+              >
               Ya
             </button>
+              </Link>
             <button
               onClick={handleCancelClick}
               className="rounded-xl px-9 py-2 ml-4 text-white bg-red-600"

@@ -83,15 +83,16 @@ function Login(props) {
           </div>
           <a href="#">Lupa Password?</a>
         </div>
-        <Link to="/dashboard/explore">
-          <button
-            className="w-full mt-5 text-white bg-[#22A6B3] hover:bg-[#1A7F89] py-3 font-bold rounded-full"
-            onClick={handleSubmit}
-          >
-            MASUK
-          </button>
-        </Link>
+        <button
+          className="w-full mt-5 text-white bg-[#22A6B3] hover:bg-[#1A7F89] py-3 font-bold rounded-full"
+          onClick={handleSubmit}
+        >
+          MASUK
+        </button>
       </form>
+        <Link to="/dashboard/explore" className="underline text-red-500">
+          Link sementara untuk pindah ke halaman dashboard
+        </Link>
     </div>
   );
 }
