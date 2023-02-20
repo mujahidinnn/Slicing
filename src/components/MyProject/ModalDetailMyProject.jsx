@@ -174,7 +174,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                           <input
                             type="text"
                             placeholder="Cari"
-                            className="w-[92%] outline-none"
+                            className="w-[92%] outline-none bg-transparent"
                             spellCheck="false"
                           />
                           <img src={search} alt="search" />

@@ -11,7 +11,7 @@ const MyProject = () => {
           <input
             type="text"
             placeholder="Search"
-            className="outline-none w-[150%]"
+            className="outline-none w-[150%] bg-transparent"
             spellCheck="false"
           />
           <img src={search} alt="search" className="mr-2" />
