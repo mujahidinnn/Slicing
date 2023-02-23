@@ -29,11 +29,13 @@ function LandingPage() {
   const text = changeForm ? "MASUK" : "DAFTAR";
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Main />
       <Tentang />
       <Role />
-      <div className="sm:hidden px-5 mb-10 -mt-8">{form}</div>
+      <div className="flex justify-center lg:hidden px-5 mb-10 -mt-8">
+        {form}
+      </div>
       {modal ? <PopupSuccess toogle={modalInactive} /> : null}
       <Footer />
     </div>

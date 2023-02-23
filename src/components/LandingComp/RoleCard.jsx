@@ -1,7 +1,6 @@
 import Hustler from "../../assets/img/Hustler.png";
 import Hacker from "../../assets/img/Hacker.png";
-import Hipster from "../../assets/img/Hustler.png";
-import Ellipse from "../../assets/img/Ellipse 4.png";
+import Hipster from "../../assets/img/Hipster.png";import Ellipse from "../../assets/img/Ellipse 4.png";
 
 const Card = [
   {

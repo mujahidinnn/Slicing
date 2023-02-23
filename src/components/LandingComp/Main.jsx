@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import img from "../../assets/img/img_landingpage.png";
 import logo from "../../assets/logo/logo_medium.svg";
 import Navbar from "./Navbar";
+import Nav from "./Nav";
 import Login from "./Login";
 import Register from "./Register";
 import PopupSuccess from "./PopupSuccess";
@@ -27,34 +28,38 @@ function Main() {
   );
   const text = changeForm ? "MASUK" : "DAFTAR";
   return (
-    <div id="main" className="relative bg-[crimson min-h-min sm:min-h-[110vh]">
+    <div id="main" className="relative min-h-min lg:min-h-[100vh]">
+      {modal ? <PopupSuccess toogle={modalInactive} /> : null}
       <div className="fixed top-0 inset-x-0 z-50">
         <Navbar button={toogle} text={text} />
       </div>
-      <img
-        src={img}
-        alt="image"
-        className="absolute hidden sm:block z-[-1] left-[-2%] top-40"
-      />
-      <div className="mb-[-60px]">
-        <img
-          src={img}
-          alt="image"
-          className="sm:hidden mt-8 w-full ml-2 bottom-0"
-        />
-      </div>
-      {modal ? <PopupSuccess toogle={modalInactive} /> : null}
-      <div className="hidden absolute sm:block bottom-[8%] right-[8%]">
-        {form}
+      <div className="w-full lg:flex lg:items-center lg:h-screen">
+        <div className="w-full flex items-center mt-2 ">
+          <img
+            src={img}
+            alt="image"
+            className="hidden lg:block w-[58%] z-[-5] ml-[-1%] mb-[4%]"
+          />
+          <div className="mb-[-60px]">
+            <img
+              src={img}
+              alt="image"
+              className="lg:hidden mt-8 w-full ml-2 bottom-0"
+            />
+          </div>
+          <div className="absolute hidden w-[45%] lg:block right-[5%]">
+            {form}
+          </div>
+        </div>
       </div>
       <img
         src={logo}
         alt="team-up"
-        className="absolute z-20 -bottom-1.5 sm:bottom-5 left-[4%] sm:left-[2%] w-[27%]"
+        className="absolute z-20 -bottom-1.5 lg:bottom-[-1.5%] left-[4%] lg:left-[2%] w-[27%]"
       />
       <svg
         id="tentang"
-        className="sm:absolute sm:bottom-0 sm:z-[-1]"
+        className="sm:absolute sm:bottom-[-1%] lg:z-[-1]"
         viewBox="0 0 1280 270"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
