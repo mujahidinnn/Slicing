@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import img from "../../assets/img/img_landingpage.png";
 import logo from "../../assets/logo/logo_medium.svg";
 import Navbar from "./Navbar";
-import Nav from "./Nav";
 import Login from "./Login";
 import Register from "./Register";
 import PopupSuccess from "./PopupSuccess";

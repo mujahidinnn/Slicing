@@ -3,6 +3,7 @@ import message from "../../assets/icons/message.svg";
 import lock from "../../assets/icons/padlock 1.svg";
 import visibleIcon from "../../assets/icons/visible.svg";
 import invisibleIcon from "../../assets/icons/invisible.svg";
+import { Link } from "react-router-dom";
 
 function Login(props) {
   const [email, setEmail] = useState("");
@@ -100,6 +101,7 @@ function Login(props) {
           MASUK
         </button>
       </form>
+      <Link to="/dashboard/explore" className="text-red-500 underline text-xl">Link sementara untuk ke halaman dashboard</Link>
     </div>
   );
 }
