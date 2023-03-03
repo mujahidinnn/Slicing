@@ -5,7 +5,7 @@ import close from "../../assets/icons/close-x.svg";
 function PopupSuccess(props) {
   return (
     <div>
-      <div className="fixed flex justify-center items-center z-[100] bg-[rgba(0,0,0,0.27)] inset-0">
+      <div className="animate-zoom-out fixed flex justify-center items-center z-[100] bg-[rgba(0,0,0,0.27)] inset-0">
         <div className="relative bg-white px-5 pb-5 sm:pb-[2.5%] sm:px-11 lg:px-[3%] w-[90%] sm:w-[500px] sm:h-[500px] lg:h-min lg:w-[40%] rounded-2xl xl:rounded-3xl 2xl:rounded-[30px] 4xl:rounded-[48px] 6xl:rounded-[80px] ">
           <div
             onClick={props.toogle}

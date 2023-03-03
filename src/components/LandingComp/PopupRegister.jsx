@@ -5,7 +5,7 @@ import close from "../../assets/icons/close-x.svg";
 function PopupRegister(props) {
   return (
     <div>
-      <div className="fixed flex justify-center items-center z-[100] bg-[rgba(0,0,0,0.27)] inset-0">
+      <div className="animate-zoom-out fixed flex justify-center items-center z-[100] bg-[rgba(0,0,0,0.27)] inset-0">
         <div className="relative bg-white px-5 pb-5 sm:pb-[2.5%] sm:px-11 lg:px-[3%] w-[90%] sm:w-[500px] sm:h-[500px] lg:h-min lg:w-[40%] rounded-2xl xl:rounded-3xl 2xl:rounded-[30px] 4xl:rounded-[48px] 6xl:rounded-[80px] ">
           <div
             onClick={props.toogle}
@@ -38,7 +38,10 @@ function PopupRegister(props) {
             onClick={props.toogle}
             className="mt-6 sm:mt-[4%] text-white lg:text-sm xl:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-4xl 5xl:text-6xl bg-[#22A6B3] hover:bg-[#1A7F89] font-bold rounded-lg 2xl:rounded-[1rem] 4xl:rounded-[2rem] py-3 lg:py-[3%] px-16 lg:px-[17%]"
           >
+            <a href={window.innerWidth<1024?`#footer`:`#`}>
+
             Daftar
+            </a>
           </button>
         </div>
       </div>
