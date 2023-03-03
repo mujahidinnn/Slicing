@@ -30,7 +30,7 @@ function EditProfile() {
   };
 
   return (
-    <div className="animate-to-right bg-[#F3F5F9] h-screen">
+    <div className="animate-to-right bg-slate-100 h-screen">
       <div className=" pl-[10%] pt-12">
         <h1 className="text-5xl font-semibold mb-[30px]">Edit Profil Saya</h1>
       </div>

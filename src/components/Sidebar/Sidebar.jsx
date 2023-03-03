@@ -8,11 +8,12 @@ import { IoMdExit } from "react-icons/io";
 import Popup from "./PopupLogout";
 import { useState } from "react";
 import profile from "../../assets/img/img.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const [modalOn, setModalOn] = useState(false);
   const [choice, setChoice] = useState(false);
+  const { pathname } = useLocation();
 
   const handleOnClose = () => setModalOn(false);
 
@@ -35,6 +36,10 @@ const Sidebar = () => {
               <li className="min-w-max">
                 <div className="text-xl hover:text-[#22A6B3]">
                   <Link
+                    style={{
+                      color:
+                        pathname === "/dashboard/explore" ? "#22A6B3" : "black",
+                    }}
                     to="/dashboard/explore"
                     className="relative group flex items-center gap-5 space-x-4 bg-gradient-to-r px-4 py-3 "
                   >
@@ -47,6 +52,12 @@ const Sidebar = () => {
               <li className="min-w-max">
                 <div className="text-xl hover:text-[#22A6B3]">
                   <Link
+                    style={{
+                      color:
+                        pathname === "/dashboard/myproject"
+                          ? "#22A6B3"
+                          : "black",
+                    }}
                     to="/dashboard/myproject"
                     className="bg group flex items-center gap-5  space-x-4 rounded-full px-4 py-3"
                   >
@@ -59,6 +70,12 @@ const Sidebar = () => {
               <li className="min-w-max">
                 <div className="text-xl hover:text-[#22A6B3]">
                   <Link
+                    style={{
+                      color:
+                        pathname === "/dashboard/myprofile"
+                          ? "#22A6B3"
+                          : "black",
+                    }}
                     to="/dashboard/myprofile"
                     className="group flex items-center gap-5  space-x-4 rounded-md px-4 py-3"
                   >
@@ -74,6 +91,10 @@ const Sidebar = () => {
           <div className="w-max -mb-3 align-center">
             <div className="text-xl hover:text-[#22A6B3]">
               <Link
+                style={{
+                  color:
+                    pathname === "/dashboard/notification" ? "#22A6B3" : "black",
+                }}
                 to="/dashboard/notification"
                 className="group flex items-center gap-5  space-x-4 rounded-md px-4 py-3"
               >

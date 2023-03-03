@@ -3,7 +3,7 @@ import { dataNotifikasi } from './dataNotification'
 
 const Notification = () => {
 	return (
-		<div className='bg-[#D8D8D8] inset-0 z-50 flex h-screen w-full overflow-x-hidden'>
+		<div className='bg-slate-100 inset-0 z-50 flex h-screen w-full overflow-x-hidden'>
 			<div className='flex flex-col items-center w-screen'>
 				<div className='p-5 text-2xl font-bold w-full ml-44'>
 					<h1 className='text-4xl'>Notifikasi</h1>
@@ -13,7 +13,7 @@ const Notification = () => {
 						return (
 							<div
 								key={notif.id}
-								className='bg-[#F3F5F9] p-3 w-[90%] rounded-xl border-l-[10px] border-[#DDEEF3] mt-5 hover:border-teal-500 hover:bg-[#DDEEF3]'>
+								className='bg-white p-3 w-[90%] rounded-xl border-l-[10px] border-[#DDEEF3] mt-5 hover:border-teal-500 hover:bg-[#DDEEF3]'>
 								<div className='flex items-center justify-between'>
 									<div>
 										<p className='text-[#22A6B3]'>{notif.title}</p>

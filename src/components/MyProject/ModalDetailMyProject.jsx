@@ -108,7 +108,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                   </div>
                   {/*body*/}
                   <div className="relative flex-auto px-6 max-h-[70vh]  overflow-y-scroll scrollbar-thin scrollbar-thumb-[rgba(153,153,153,0.45)] hover:scrollbar-thumb-[rgba(153,153,153,0.74)] scrollbar-track-[rgba(254,254,254,0.5)] scrollbar-thumb-rounded-xl">
-                    <p className="text-cyan-500 font-semibold">
+                    <p className="text-cyan-500 font-semibold ml-2">
                       {data.program}
                     </p>
                     <div className="flex gap-2">
@@ -174,7 +174,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                           <input
                             type="text"
                             placeholder="Cari"
-                            className="w-[92%] outline-none bg-transparent"
+                            className="w-[92%] outline-none bg-transparent text-cyan-500"
                             spellCheck="false"
                           />
                           <img src={search} alt="search" />
@@ -190,7 +190,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                                   <img
                                     src={item.avatar}
                                     alt=""
-                                    className={`w-12 h-12] ${item.opacity}`}
+                                    className={`w-14 h-10] rounded-full ${item.opacity}`}
                                   />
                                   <div className="flex-col">
                                     <p

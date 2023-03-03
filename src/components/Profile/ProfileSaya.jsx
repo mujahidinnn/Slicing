@@ -5,7 +5,7 @@ import edtp from "../../../src/assets/icons/Edit.svg";
 import gml from "../../../src/assets/icons/Pesan.svg";
 function ProfileSaya() {
   return (
-    <div className="">
+    <div className="bg-slate-100 h-screen">
       <div className="flex justify-between px-32  pt-12">
         <h1 className="text-5xl font-semibold mb-[30px] ">Profil Saya</h1>
         <div className="bg-[#22A6B3] rounded-lg px-3 flex h-10 gap-2">
