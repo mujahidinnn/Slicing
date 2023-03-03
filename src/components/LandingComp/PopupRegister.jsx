@@ -30,18 +30,20 @@ function PopupRegister(props) {
             Jika Anda sudah memiliki akun terdaftar,
             <br />
             Anda bisa{" "}
-            <span className="font-bold text-[#22A6B3]">
-              Masuk di sini!
-            </span>{" "}
+            <a
+              href={window.innerWidth < 1024 ? `#footer` : `#`}
+              onClick={props.toogle}
+            >
+              <button className="font-bold text-[#22A6B3]">
+                Masuk di sini!
+              </button>{" "}
+            </a>
           </p>
           <button
             onClick={props.toogle}
             className="mt-6 sm:mt-[4%] text-white lg:text-sm xl:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-4xl 5xl:text-6xl bg-[#22A6B3] hover:bg-[#1A7F89] font-bold rounded-lg 2xl:rounded-[1rem] 4xl:rounded-[2rem] py-3 lg:py-[3%] px-16 lg:px-[17%]"
           >
-            <a href={window.innerWidth<1024?`#footer`:`#`}>
-
-            Daftar
-            </a>
+            <a href={window.innerWidth < 1024 ? `#footer` : `#`}>Daftar</a>
           </button>
         </div>
       </div>
