@@ -4,7 +4,7 @@ import FtHacker from '../../assets/img/Hacker.png'
 export default function PopUpHacker({ setShowHacker }) {
 	return (
 		<>
-			<div className='justify-center mt-5 fixed inset-0 z-50 '>
+			<div className='animate-zoom-out justify-center mt-5 fixed inset-0 z-50 '>
 				<div className='relative mx-auto flex gap-3 max-w-xl bg-[#ffffff] rounded-2xl px-12 py-5 '>
 					<div className='relative mx-auto max-w-lg bg-[#DDEEF3] rounded-2xl p-5'>
 						<div className='text-end'>

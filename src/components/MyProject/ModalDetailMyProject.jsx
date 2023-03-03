@@ -89,7 +89,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
         return (
           <div key={id}>
             <div
-              className="fixed inset-0 z-50 m-auto flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
+              className="animate-zoom-out fixed inset-0 z-50 m-auto flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
               style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}
             >
               <div className="relative  m-auto mt-[5%] w-auto max-w-[60%]">

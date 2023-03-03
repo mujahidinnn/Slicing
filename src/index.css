@@ -14,3 +14,35 @@
 body {
   margin: 0 auto;
 }
+
+/* Animation */
+
+.animate-zoom-out {
+  animation: zoom .2s ease-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-to-right {
+  animation: right .2s linear;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
