@@ -80,9 +80,9 @@ const CardProjectIMade = () => {
                   Lihat Detail
                 </div>
                 {/* Popup Lihat Detail */}
-                {showDetail ? (
+                {showDetail && (
                   <ModalDetailMyProject setShowDetail={setShowDetail} />
-                ) : null}
+                )}
                 {/* Popup Lihat Detail */}
               </div>
             </div>

@@ -30,13 +30,13 @@ function EditProfile() {
   };
 
   return (
-    <div className="animate-to-right bg-slate-100 h-screen">
-      <div className=" pl-[10%] pt-12">
+    <div className="animate-to-right bg-slate-100 lg:h-screen">
+      <div className="px-4 pt-14">
         <h1 className="text-5xl font-semibold mb-[30px]">Edit Profil Saya</h1>
       </div>
 
-      <div className="flex justify-start pl-[10%] pt-6 pr-[3%] gap-20">
-        <div className="w-[40%]">
+      <div className="flex flex-col lg:flex-row justify-start px-4 pt-6 pr-[3%] gap-20">
+        <div className="w-full lg:w-[40%]">
           <p className="font-semibold text-xl text-[#22A6B3]">Identitas</p>
           <br />
           <p className="pb-[7px] text-base font-medium">Foto Profil</p>
@@ -126,7 +126,7 @@ function EditProfile() {
           </div>
         </div>
         {/* content rigth */}
-        <div className="w-[50%]">
+        <div className="w-full lg:w-[50%]">
           <p className="font-semibold text-xl text-[#22A6B3]">Lain-lain</p>
           <br />
 
@@ -172,7 +172,7 @@ function EditProfile() {
           </div>
           <br />
 
-          <div className="bg-[#22A6B3] rounded-lg ml-[400px] mt-8 w-[199px] px-5 py-3">
+          <div className="bg-[#22A6B3] rounded-lg float-right mt-8 w-[199px] px-5 py-3 mb-10">
             <button
               onClick={() => setShowModal(true)}
               className="text-[#FCFBFF]"

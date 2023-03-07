@@ -6,8 +6,8 @@ import CardProjectIMade from './CardProjectIMade'
 const MyProject = () => {
 	return (
 		<div className='bg-slate-100 '>
-			<div className='bg-slate-100 min-h-screen px-2 lg:px-[31px] pt-12 ml-[14%] md:ml-[10%] lg:ml-[5%]'>
-				<div className='flex justify-between items-center bg-white max-w-xs md:max-w-sm p-3 gap-4 rounded-full mb-5'>
+			<div className='bg-slate-100 min-h-screen px-4 lg:px-[31px] pt-12'>
+				<div className='mt-5 flex justify-between items-center bg-white max-w-xs md:max-w-sm p-3 gap-4 rounded-full mb-5'>
 					<input
 						type='text'
 						placeholder='Search'
@@ -26,8 +26,8 @@ const MyProject = () => {
 				</h2>
 
 				<>
-					<h3 className='font-semibold text-2xl mb-4'>Dibuat oleh Saya</h3>
 					{/* Cards project dibuat oleh saya */}
+					<h3 className='font-semibold text-2xl mb-4'>Dibuat oleh Saya</h3>
 					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-center place-content-center justify-items-center'>
 						<CardProjectIMade />
 					</div>

@@ -150,7 +150,7 @@ export default function CreateProject() {
       {/* pembungkus */}
       <div className="animate-to-right pr-[6%] sm:pr-[3%] pl-[10%] max-w-screen-2x bg-[#F3F5F9] h-screen m-auto pb-10">
         {/* Create Project */}
-        <p className="pt-[49px] text-4xl sm:text-5xl font-bold">Buat Proyek</p>
+        <p className="pt-20 text-4xl sm:text-5xl font-bold">Buat Proyek</p>
         <form onSubmit={saveData} className="md:flex justify-between">
           <div className="md:w-[55%] w-full mt-[45px] mr-16">
             <div>
@@ -247,7 +247,7 @@ export default function CreateProject() {
                 </div>
                 <div className="w-1/3 ">
                   <div
-                    className="my-2 flex items-center"
+                    className="my-2 flex items-center w-max"
                     onClick={() =>
                       document.querySelector(".input-field").focus()
                     }
@@ -259,6 +259,7 @@ export default function CreateProject() {
                       value="Lainnya"
                       onChange={(e) => setKategori(e.target.value)}
                       checked={kategori === "Lainnya"}
+                      className="radio-checkin"
                     />
                     <label className="ml-2" htmlFor="lainnya">
                       {" "}
@@ -279,7 +280,6 @@ export default function CreateProject() {
                   </div>
                 </div>
               </div>
-
               {/* Durasi project */}
               <p className="mt-5  font-Poppins">Durasi Pengerjaan</p>
               <div className="mt-2">
@@ -452,7 +452,7 @@ export default function CreateProject() {
             {/* Unggah project */}
             <button
               type="submit"
-              className="bg-[#22A6B3] px-3 py-1 rounded-lg text-[#FCFBFF] mt-5 "
+              className="bg-[#22A6B3] px-3 py-1 rounded-lg text-[#FCFBFF] my-7 "
             >
               Unggah project
             </button>

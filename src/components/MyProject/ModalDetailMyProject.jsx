@@ -88,11 +88,8 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
       {dataDetailCard.map((data, id) => {
         return (
           <div key={id}>
-            <div
-              className="animate-zoom-out fixed inset-0 z-50 m-auto flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
-              style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}
-            >
-              <div className="relative  m-auto mt-[5%] w-auto max-w-[60%]">
+            <div className="animate-zoom-out bg-[rgba(0,0,0,0.5)] fixed inset-0 z-[99999] m-auto flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+              <div className="relative  m-auto mt-[5%] w-auto max-w-[96%] lg:max-w-[60%]">
                 {/*content*/}
                 <div className="bg-white flex w-full py-5 flex-col rounded-2xl border-0 shadow-lg outline-none focus:outline-none">
                   {/*header*/}
@@ -120,8 +117,8 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                       </p>
                     </div>
                     <p className="text-gray-700 pl-2">{data.category}</p>
-                    <div className="flex">
-                      <div className="w-[50%] p-2">
+                    <div className="flex flex-col lg:flex-row">
+                      <div className="w-full lg:w-[50%] p-2">
                         <p className="my-3 text-gray-500">
                           {data.desc}
                           <span className="text-cyan-500 cursor-pointer">
@@ -161,7 +158,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                           <p className="text-gray-500">{data.descRekrutmen}</p>
                         </div>
                       </div>
-                      <div className="w-[50%] px-2 mt-4">
+                      <div className="w-full lg:w-[50%] px-2 mt-4">
                         <div className="flex gap-2 mb-3">
                           <p className="text-cyan-500 font-semibold text-lg">
                             Pelamar

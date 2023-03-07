@@ -18,7 +18,7 @@ function Dashboard() {
   });
 
   return (
-    <div className="flex flex-col pt-5 px-32 w-full h-full bg-gray-200">
+    <div className="flex flex-col pt-5 px-32 w-full h-full bg-slate-100">
       <Search handleChange={changeSearchParams} search={search} />
       <CreateProjectCard />
       <ProjectList filteredProject={filteredProject} />

@@ -18,7 +18,7 @@ function DashboardExplore() {
 	})
 
 	return (
-		<div className='flex flex-col pt-5 px-32 w-full h-full bg-slate-100'>
+		<div className='flex flex-col pt-20 pl-[2%] w-full h-full bg-slate-100'>
 			<ProjectSearch
 				handleChange={changeSearchParams}
 				search={search}

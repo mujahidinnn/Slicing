@@ -6,8 +6,8 @@ import gml from "../../../src/assets/icons/Pesan.svg";
 function ProfileSaya() {
   return (
     <div className="bg-slate-100 h-screen">
-      <div className="flex justify-between px-32  pt-12">
-        <h1 className="text-5xl font-semibold mb-[30px] ">Profil Saya</h1>
+      <div className="flex justify-between pt-20 px-2">
+        <h1 className="text-5xl font-semibold mb-[30px] px-2">Profil Saya</h1>
         <div className="bg-[#22A6B3] rounded-lg px-3 flex h-10 gap-2">
           <img src={edtp} alt="tombol edit profil" className="w-6" />
           <Link to="/dashboard/editprofile">
@@ -15,7 +15,7 @@ function ProfileSaya() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-between px-32 pt-4">
+      <div className="flex flex-col lg:flex-row justify-between gap-5 px-4 pt-4">
         <div className="rounded-[20px] bg-[#DDEEF3] w-[100%] px-10 py-5">
           <div className="flex">
             <div className="bg-green-400 rounded-full w-[91px] h-[88px] pt-[67px] pl-14">
@@ -41,8 +41,7 @@ function ProfileSaya() {
               Libero ad explicabo, sint possimus harum enim nobis sunt
               cupiditate perspiciatis earum maxime quaerat ducimus! Praesentium
               enim soluta quaerat minima eveniet asperiores illo minus
-              molestiae. Deserunt, incidunt? Expedita corporis sequi officiis
-              nam fugit eum explicabo, iste, ex unde,
+              molestiae.
             </p>
             <br />
             <div className="flex">
@@ -106,7 +105,7 @@ function ProfileSaya() {
           </div>
         </div>
       </div>
-      <div className="h-[5vh]"/>
+      {/* <div className="h-[5vh]"/> */}
     </div>
   );
 }
