@@ -204,12 +204,12 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                                 <div className="flex-col">
                                   <div className="flex gap-2 float-right">
                                     <div
-                                      className={`${item.bgStatus1} text-xs lg:text-base text-white h-max px-2 py-[2px] rounded-xl cursor-pointer w-max`}
+                                      className={`${item.bgStatus1} text-xs lg:text-base text-white h-max px-2 py-[2px] rounded-md lg:rounded-xl cursor-pointer w-max`}
                                     >
                                       {item.status1}
                                     </div>
                                     <div
-                                      className={`${item.bgStatus2} text-xs lg:text-base text-white h-max px-2 py-[2px] rounded-xl cursor-pointer w-max`}
+                                      className={`${item.bgStatus2} text-xs lg:text-base text-white h-max px-2 py-[2px] rounded-md lg:rounded-xl cursor-pointer w-max`}
                                     >
                                       {item.status2}
                                     </div>

@@ -7,7 +7,7 @@ const ProjectList = ({ filteredProject }) => {
 
   return (
     <div className="flex flex-col w-full mt-10 pb-10">
-      <h1 className="text-3xl font-semibold tracking-wide text-gray-900">
+      <h1 className="text-3xl font-semibold tracking-wide text-gray-900  pl-4 lg:pl-0">
         Explore!
       </h1>
 

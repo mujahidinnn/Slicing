@@ -148,7 +148,7 @@ export default function CreateProject() {
   return (
     <>
       {/* pembungkus */}
-      <div className="animate-to-right px-[3%] lg:px-[6%] max-w-screen-2x bg-[#F3F5F9] h-full lg:h-screen m-auto pb-10">
+      <div className="animate-to-right px-4 lg:px-10 max-w-screen-2x bg-[#F3F5F9] h-full lg:h-screen m-auto pb-10">
         {/* Create Project */}
         <p className="pt-20 text-4xl sm:text-5xl font-bold">Buat Proyek</p>
         <form onSubmit={saveData} className="md:flex justify-between">

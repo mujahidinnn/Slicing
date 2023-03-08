@@ -1,14 +1,14 @@
-import {
-  AiOutlineHome,
-  AiOutlineFolderOpen,
-  AiOutlineUser,
-} from "react-icons/ai";
-import { MdNotificationsNone } from "react-icons/md";
-import { IoMdExit } from "react-icons/io";
-import Popup from "./PopupLogout";
 import { useState } from "react";
-import profile from "../../assets/img/img.png";
 import { Link, useLocation } from "react-router-dom";
+import Popup from "./PopupLogout";
+
+// Icons
+import { HiOutlineHome } from "react-icons/hi";
+import { HiOutlineFolderMinus } from "react-icons/hi2";
+import { BiUser } from "react-icons/bi";
+import { IoNotificationsOutline, IoLogOutOutline } from "react-icons/io5";
+import profile from "../../assets/img/img.png";
+
 
 const Sidebar = () => {
   const [modalOn, setModalOn] = useState(false);
@@ -42,7 +42,7 @@ const Sidebar = () => {
                           : "text-black hover:text-[#22A6B3]"
                       }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                     >
-                      <AiOutlineHome size={33} className="ml-[6px]" />
+                      <HiOutlineHome size={33} className="ml-[6px]" />
                       <span className="fill-current">Explore</span>
                     </Link>
                   </div>
@@ -57,7 +57,7 @@ const Sidebar = () => {
                           : "text-black hover:text-[#22A6B3]"
                       }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                     >
-                      <AiOutlineFolderOpen size={33} className="ml-[6px]" />
+                      <HiOutlineFolderMinus size={33} className="ml-[6px]" />
                       <span className="fill-current ">Proyek Saya</span>
                     </Link>
                   </div>
@@ -72,7 +72,7 @@ const Sidebar = () => {
                           : "text-black hover:text-[#22A6B3]"
                       }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                     >
-                      <AiOutlineUser size={33} className="ml-[6px]" />
+                      <BiUser size={33} className="ml-[6px]" />
                       <span className=" fill-current  ">Profil Saya</span>
                     </Link>
                   </div>
@@ -90,7 +90,7 @@ const Sidebar = () => {
                       : "text-black hover:text-[#22A6B3]"
                   }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                 >
-                  <MdNotificationsNone size={33} className="ml-[6px]" />
+                  <IoNotificationsOutline size={33} className="ml-[6px]" />
                   <span className="fill-current ">Notifikasi</span>
                 </Link>
               </div>
@@ -99,7 +99,7 @@ const Sidebar = () => {
                 onClick={() => setModalOn(true)}
               >
                 <div className="group flex items-center gap-5  space-x-4 rounded-md px-4 py-3">
-                  <IoMdExit size={33} className="ml-[6px]" />
+                  <IoLogOutOutline size={33} className="ml-[7px]" />
                   <span className="fill-current ">Keluar</span>
                 </div>
               </div>

@@ -23,7 +23,7 @@ const CardProjectIMade = () => {
       {projectIMade.map((item, id) => {
         return (
           <div key={id}>
-            <div className="flex flex-col max-w-xl bg-white p-5 rounded-lg">
+            <div className="flex flex-col max-w-4xl bg-white p-5 rounded-lg lg:h-[300px]">
               <div className="flex justify-between mb-2">
                 <h4 className="font-semibold text-md text-teal-500">
                   {item.program}
@@ -33,8 +33,12 @@ const CardProjectIMade = () => {
                 </div>
               </div>
               <div className="flex flex-col">
-                <h3 className="font-semibold text-gray-800">{item.nameproject}</h3>
-                <p className="font-normal leading-6 text-gray-800">{item.category}</p>
+                <h3 className="font-semibold text-gray-800">
+                  {item.nameproject}
+                </h3>
+                <p className="font-normal leading-6 text-gray-800">
+                  {item.category}
+                </p>
                 <p className="font-light leading-5 mt-[13px] mb-[13px] text-gray-700">
                   {item.desc}
                   <span
@@ -75,7 +79,7 @@ const CardProjectIMade = () => {
                 </div>
                 <div
                   onClick={() => setShowDetail(true)}
-                  className="w-max md:w-auto flex bg-teal-500 text-white px-2 py-1 md:py-0 cursor-pointer rounded-xl text-base items-center"
+                  className="w-max md:w-auto flex bg-teal-500 cursor-pointer text-white px-2 py-1 md:px-5 md:py-2 rounded-xl text-base items-center"
                 >
                   Lihat Detail
                 </div>
