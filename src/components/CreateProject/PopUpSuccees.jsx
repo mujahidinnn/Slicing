@@ -5,11 +5,11 @@ export default function PopUpSuccess() {
   return (
     <>
       <div className="animate-zoom-out flex justify-center items-center fixed inset-0 z-[99999] bg-[rgba(0,0,0,0.25)]">
-        <div className="w-[90%] lg:w-[70%] xl:w-[50%] bg-white rounded-3xl pt-6 pb-8 m-auto ">
-          <p className="float-right">
+        <div className="w-[90%] lg:w-[70%] xl:w-[50%] bg-white rounded-3xl pt-6 pb-8 m-auto relative">
+          <p className="absolute right-3 top-3">
             <Link
               to="/dashboard/explore"
-              className="p-4 pr-6 text-gray-700 text-xl"
+              className="text-gray-600 text-xl"
             >
               ✕
             </Link>

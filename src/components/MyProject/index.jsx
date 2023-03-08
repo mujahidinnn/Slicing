@@ -5,7 +5,7 @@ import CardProjectIMade from './CardProjectIMade'
 const MyProject = () => {
 	return (
 		<div className='bg-slate-100 '>
-			<div className='bg-slate-100 min-h-screen px-4 lg:px-[31px] pt-12'>
+			<div className='bg-slate-100 min-h-screen px-4 lg:px-2 pt-12'>
 				<div className='mt-5 flex justify-between items-center bg-white max-w-xs md:max-w-sm p-3 gap-4 rounded-full mb-5'>
 					<input
 						type='text'

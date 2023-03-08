@@ -143,7 +143,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                               <p className="font-semibold text-gray-900">
                                 {data.nameFounder}
                               </p>
-                              <p className="font-normal text-gray-900">
+                              <p className="font-normal text-gray-700">
                                 {data.position}
                               </p>
                             </div>
@@ -151,7 +151,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                           <p className="text-cyan-500 font-semibold py-1">
                             Detail Rekrutmen:
                           </p>
-                          <p className="flex gap-2 items-center py-2">
+                          <p className="flex gap-2 items-center py-2 text-gray-800">
                             <img src={search} alt="" /> 4 Hacker, 3 Hipster
                           </p>
                           <p className="text-gray-500">{data.descRekrutmen}</p>
@@ -186,16 +186,16 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                                   <img
                                     src={item.avatar}
                                     alt=""
-                                    className={`w-14 h-10] rounded-full ${item.opacity}`}
+                                    className={`w-14 h-14 rounded-full ${item.opacity}`}
                                   />
                                   <div className="flex-col">
                                     <p
-                                      className={`font-semibold ${item.opacity}`}
+                                      className={`font-semibold text-xs lg:text-base text-gray-800 ${item.opacity}`}
                                     >
                                       {item.name}
                                     </p>
                                     <p
-                                      className={`text-gray-700 ${item.opacity}`}
+                                      className={`text-gray-700 text-xs lg:text-base  ${item.opacity}`}
                                     >
                                       {item.role}
                                     </p>
@@ -204,17 +204,17 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
                                 <div className="flex-col">
                                   <div className="flex gap-2 float-right">
                                     <div
-                                      className={`${item.bgStatus1} text-white h-max px-2 py-[2px] rounded-xl cursor-pointer w-max`}
+                                      className={`${item.bgStatus1} text-xs lg:text-base text-white h-max px-2 py-[2px] rounded-xl cursor-pointer w-max`}
                                     >
                                       {item.status1}
                                     </div>
                                     <div
-                                      className={`${item.bgStatus2} text-white h-max px-2 py-[2px] rounded-xl cursor-pointer`}
+                                      className={`${item.bgStatus2} text-xs lg:text-base text-white h-max px-2 py-[2px] rounded-xl cursor-pointer w-max`}
                                     >
                                       {item.status2}
                                     </div>
                                   </div>
-                                  <p className="text-gray-500">
+                                  <p className="text-gray-500  text-xs lg:text-base">
                                     {item.descStatus}
                                   </p>
                                 </div>

@@ -64,9 +64,9 @@ const CardsProjectApplied = () => {
                 </div>
               </div>
               <div className="flex flex-col">
-                <h3 className="font-semibold">{data.nameproject}</h3>
-                <p className="font-normal leading-6">{data.category}</p>
-                <p className="font-light leading-5 mt-[13px] mb-[13px]">
+                <h3 className="font-semibold text-gray-800">{data.nameproject}</h3>
+                <p className="font-normal leading-6 text-gray-800">{data.category}</p>
+                <p className="font-light leading-5 mt-[13px] mb-[13px] text-gray-700">
                   {data.desc}
                   <span className="text-teal-500 font-medium cursor-pointer">
                     ...Baca Selengkapnya
@@ -74,7 +74,7 @@ const CardsProjectApplied = () => {
                 </p>
                 <div className="flex leading-9 gap-2 items-center">
                   <img src={search} alt="lup icon" />
-                  <p className="font-medium">{data.need}</p>
+                  <p className="font-medium text-gray-700">{data.need}</p>
                 </div>
               </div>
               <div className="bg-mainneutral h-px w-auto" />

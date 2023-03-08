@@ -23,26 +23,24 @@ const Sidebar = () => {
           <div className="flex h-[80vh] flex-col justify-between pt-2 pb-6">
             <div>
               <Link to="/dashboard/myprofile">
-              <div className="m-2 relative flex items-center gap-[10px] space-x-4">
-                <img src={profile} alt="" className="ml-2" />
-                <div>
-                  <span className="font-semibold">Vellya Riona</span>
-                  <p className="text-sm">vellyariona@gmail.com</p>
+                <div className="m-2  flex items-center gap-[10px] space-x-4">
+                  <img src={profile} alt="" className="ml-2" />
+                  <div>
+                    <span className="font-semibold">Vellya Riona</span>
+                    <p className="text-sm">vellyariona@gmail.com</p>
+                  </div>
                 </div>
-              </div>
               </Link>
               <ul className="mt-6 space-y-2 tracking-wide">
                 <li className="min-w-max">
                   <div className="text-xl hover:text-[#22A6B3]">
                     <Link
-                      style={{
-                        color:
-                          pathname === "/dashboard/explore"
-                            ? "#22A6B3"
-                            : "black",
-                      }}
                       to="/dashboard/explore"
-                      className="relative group flex items-center gap-5 space-x-4 bg-gradient-to-r px-4 py-3 "
+                      className={`${
+                        pathname === "/dashboard/explore"
+                          ? "text-[#22A6B3]"
+                          : "text-black hover:text-[#22A6B3]"
+                      }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                     >
                       <AiOutlineHome size={33} className="ml-[6px]" />
                       <span className="fill-current">Explore</span>
@@ -52,14 +50,12 @@ const Sidebar = () => {
                 <li className="min-w-max">
                   <div className="text-xl hover:text-[#22A6B3]">
                     <Link
-                      style={{
-                        color:
-                          pathname === "/dashboard/myproject"
-                            ? "#22A6B3"
-                            : "black",
-                      }}
                       to="/dashboard/myproject"
-                      className="bg group flex items-center gap-5  space-x-4 rounded-full px-4 py-3"
+                      className={`${
+                        pathname === "/dashboard/myproject"
+                          ? "text-[#22A6B3]"
+                          : "text-black hover:text-[#22A6B3]"
+                      }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                     >
                       <AiOutlineFolderOpen size={33} className="ml-[6px]" />
                       <span className="fill-current ">Proyek Saya</span>
@@ -69,14 +65,12 @@ const Sidebar = () => {
                 <li className="min-w-max">
                   <div className="text-xl hover:text-[#22A6B3]">
                     <Link
-                      style={{
-                        color:
-                          pathname === "/dashboard/myprofile"
-                            ? "#22A6B3"
-                            : "black",
-                      }}
                       to="/dashboard/myprofile"
-                      className="group flex items-center gap-5  space-x-4 rounded-md px-4 py-3"
+                      className={`${
+                        pathname === "/dashboard/myprofile"
+                          ? "text-[#22A6B3]"
+                          : "text-black hover:text-[#22A6B3]"
+                      }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                     >
                       <AiOutlineUser size={33} className="ml-[6px]" />
                       <span className=" fill-current  ">Profil Saya</span>
@@ -89,14 +83,12 @@ const Sidebar = () => {
             <div className="w-max -mb-3 align-center">
               <div className="text-xl hover:text-[#22A6B3]">
                 <Link
-                  style={{
-                    color:
-                      pathname === "/dashboard/notification"
-                        ? "#22A6B3"
-                        : "black",
-                  }}
                   to="/dashboard/notification"
-                  className="group flex items-center gap-5  space-x-4 rounded-md px-4 py-3"
+                  className={`${
+                    pathname === "/dashboard/notification"
+                      ? "text-[#22A6B3]"
+                      : "text-black hover:text-[#22A6B3]"
+                  }  group flex items-center gap-5 space-x-4 px-4 py-3`}
                 >
                   <MdNotificationsNone size={33} className="ml-[6px]" />
                   <span className="fill-current ">Notifikasi</span>

@@ -61,8 +61,8 @@ const Hamburger = () => {
                 <div className="m-2 mr-0 relative flex items-center gap-[10px]">
                   <img src={profile} alt="" className="ml-2" />
                   <div>
-                    <span className="font-semibold">Vellya Riona</span>
-                    <p className="text-sm">vellyariona@gmail.com</p>
+                    <span className="font-semibold text-gray-800">Vellya Riona</span>
+                    <p className="text-sm text-gray-700">vellyariona@gmail.com</p>
                   </div>
                 </div>
               </Link>
@@ -73,8 +73,8 @@ const Hamburger = () => {
                     className={`${
                       pathname === "/dashboard/explore"
                         ? "text-[#22A6B3]"
-                        : "text-black hover:text-[#22A6B3]"
-                    } relative group flex items-center gap-5 space-x-4 bg-gradient-to-r px-4 py-3`}
+                        : "text-gray-700 hover:text-[#22A6B3]"
+                    } relative group flex items-center gap-5 space-x-4 px-4 py-3`}
                     onClick={() => setShow(false)}
                   >
                     <AiOutlineHome size={33} className="ml-[6px]" />
@@ -87,7 +87,7 @@ const Hamburger = () => {
                     className={`${
                       pathname === "/dashboard/myproject"
                         ? "text-[#22A6B3]"
-                        : "text-black hover:text-[#22A6B3]"
+                        : "text-gray-700 hover:text-[#22A6B3]"
                     } bg group flex items-center gap-5  space-x-4 rounded-full px-4 py-3`}
                     onClick={() => setShow(false)}
                   >
@@ -101,7 +101,7 @@ const Hamburger = () => {
                     className={`${
                       pathname === "/dashboard/myprofile"
                         ? "text-[#22A6B3]"
-                        : "text-black hover:text-[#22A6B3]"
+                        : "text-gray-700 hover:text-[#22A6B3]"
                     } bg group flex items-center gap-5  space-x-4 rounded-full px-4 py-3`}
                     onClick={() => setShow(false)}
                   >
@@ -117,7 +117,7 @@ const Hamburger = () => {
                 className={`${
                   pathname === "/dashboard/notification"
                     ? "text-[#22A6B3]"
-                    : "text-black hover:text-[#22A6B3]"
+                    : "text-gray-700 hover:text-[#22A6B3]"
                 } bg group flex items-center gap-5  space-x-4 rounded-full px-4 py-3`}
                 onClick={() => setShow(false)}
               >

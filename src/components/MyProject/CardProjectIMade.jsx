@@ -33,9 +33,9 @@ const CardProjectIMade = () => {
                 </div>
               </div>
               <div className="flex flex-col">
-                <h3 className="font-semibold">{item.nameproject}</h3>
-                <p className="font-normal leading-6">{item.category}</p>
-                <p className="font-light leading-5 mt-[13px] mb-[13px]">
+                <h3 className="font-semibold text-gray-800">{item.nameproject}</h3>
+                <p className="font-normal leading-6 text-gray-800">{item.category}</p>
+                <p className="font-light leading-5 mt-[13px] mb-[13px] text-gray-700">
                   {item.desc}
                   <span
                     onClick={() => setShowDetail(true)}
@@ -46,7 +46,7 @@ const CardProjectIMade = () => {
                 </p>
                 <div className="flex leading-9 gap-2 items-center">
                   <img src={search} alt="lup icon" />
-                  <p className="font-medium">{item.need}</p>
+                  <p className="font-medium text-gray-700">{item.need}</p>
                 </div>
               </div>
               <div className="bg-slate-200 h-px w-auto" />
