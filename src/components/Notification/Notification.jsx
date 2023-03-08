@@ -4,16 +4,16 @@ import { dataNotifikasi } from './dataNotification'
 const Notification = () => {
 	return (
 		<div className='bg-slate-100 z-50 flex h-screen w-full overflow-x-hidden'>
-			<div className='flex flex-col items-center w-screen px-9'>
+			<div className='flex flex-col items-center w-screen px-2 lg:px-9'>
 				<div className='pt-20 text-2xl font-bold w-full px-4'>
 					<h1 className='text-4xl'>Notifikasi</h1>
 				</div>
-				<div className='mt-8 w-full flex flex-col'>
+				<div className='mt-2 lg:mt-8 w-full flex flex-col'>
 					{dataNotifikasi.map((notif) => {
 						return (
               <div
                 key={notif.id}
-                className="bg-white p-3 w-[98%] rounded-xl border-l-[10px] border-[#B1DAE7] mt-5 hover:border-teal-400 hover:bg-[#DDEEF3]"
+                className="bg-white p-3 w-full rounded-xl border-l-[10px] border-[#B1DAE7] mt-5 hover:border-teal-400 hover:bg-[#DDEEF3]"
               >
                 <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3">
                   <div>
