@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import logo from "../../assets/logo/logo_medium.svg";
 
 const Navbar = (props) => {
@@ -41,45 +41,42 @@ const Navbar = (props) => {
         </div>
 
         <ul
-          className={`font-bold grid gap-5 p-[15%] sm:px-[2%] sm:pt-0 sm:gap- sm:flex sm:items-center left-0 sm:pb-0 pb-9 absolute sm:static bg-[#22A6B3] sm:bg-none sm:z-auto z-[-1] w-full sm:w-auto sm:pl-0 pl-9 transition-all duration-500 ease-in shadow-[0_3px_20px_rgba(0,0,0,0.25)] sm:shadow-none ${
+          className={`font-bold grid gap-3 pt-[15%] sm:pt-[0] sm:flex sm:items-center left-0 absolute sm:static bg-[#22A6B3] sm:bg-none sm:z-auto z-[-1] w-full sm:w-auto transition-all duration-500 ease-in shadow-[0_3px_20px_rgba(0,0,0,0.25)] sm:shadow-none ${
             open ? "top-0 " : "top-[-450%]"
           }`}
         >
-          <li
-            onClick={() => setOpen(false)}
-            className="sm:my-0 text-[#DCDCDC] sm:text-2xl lg:text-[0.95em] xl:text-[1.15em] mt-7"
+          <a
+            href="#"
+            className="text-[#DCDCDC] duration-500 sm:duration-[0s]"
           >
-            <a
-              href="#tentang"
-              className="text-[#DCDCDC] duration-500 sm:duration-[0s]"
+            <li
+              onClick={() => setOpen(false)}
+              className="sm:my-0 text-[#DCDCDC] sm:text-2xl lg:text-[0.95em] xl:text-[1.15em] mt-5 px-6 w-full"
             >
               TENTANG
-            </a>
-          </li>
-          <li
-            onClick={() => setOpen(false)}
-            className="sm:my-0 text-[#DCDCDC] sm:text-2xl lg:text-[0.95em] xl:text-[1.15em] "
+            </li>
+          </a>
+          <a
+            href="#role"
+            className="text-[#DCDCDC] duration-500 sm:duration-[0s]"
           >
-            <a
-              href="#role"
-              className="text-[#DCDCDC] duration-500 sm:duration-[0s]"
+            <li
+              onClick={() => setOpen(false)}
+              className="sm:my-0 text-[#DCDCDC] sm:text-2xl lg:text-[0.95em] xl:text-[1.15em] px-6 w-full"
             >
               ROLE
-            </a>
-          </li>
+            </li>
+          </a>
 
-          <li
-            className="text-xl sm:text-2xl lg:text-base xl:text-xl"
-            onClick={props.button}
+          <a
+            href={window.innerWidth > 1024 ? `#` : `#footer`}
+            className="text-white text-xl sm:text-2xl lg:text-base xl:text-xl px-6 w-full pb-3 lg:pb-0"
+            onClick={() => {
+              setOpen(false);
+            }}
           >
-            <a
-              href={window.innerWidth < 1024 ? `#footer` : `#`}
-              className="text-white"
-              onClick={() => setOpen(false)}
-            >
-              {props.text}
-            </a>
-          </li>
+            <li onClick={props.button}>{props.text}</li>
+          </a>
         </ul>
       </div>
     </div>

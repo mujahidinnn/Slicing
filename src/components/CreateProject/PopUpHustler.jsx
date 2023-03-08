@@ -3,8 +3,8 @@ import FtHustler from '../../assets/img/Hustler.png'
 export default function PopUpHustler({ setShowHustler }) {
 	return (
     <>
-      <div className="animate-zoom-out justify-center mt-5 fixed inset-0 z-50 ">
-        <div className="relative mx-auto flex gap-3 max-w-xl bg-[#ffffff] rounded-2xl px-12 py-5 ">
+      <div className="animate-zoom-out flex justify-center items-center fixed inset-0 z-[99999] bg-[rgba(0,0,0,0.25)]">
+        <div className="relative mx-auto flex gap-3 max-w-xl bg-[#ffffff] rounded-2xl px-12 py-5 w-[94%]">
           <div className="relative mx-auto max-w-lg bg-[#DDEEF3] rounded-2xl p-5">
             <div className="text-end">
               <button
@@ -30,7 +30,7 @@ export default function PopUpHustler({ setShowHustler }) {
           </div>
         </div>
       </div>
-      <div className="opacity-25 fixed inset-0 z-40 bg-black max-w-screen-2x m-auto"></div>
+      {/* <div className="opacity-25 fixed inset-0 z-40 bg-black max-w-screen-2x m-auto"></div> */}
     </>
   );
 }

@@ -1,3 +1,4 @@
+import React from 'react'
 import { SlMagnifier } from 'react-icons/sl'
 import { BiTimeFive } from 'react-icons/bi'
 import { BsX } from 'react-icons/bs'
