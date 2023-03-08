@@ -1,4 +1,3 @@
-import React from 'react'
 import FtHustler from '../../assets/img/Hustler.png'
 
 export default function PopUpHustler({ setShowHustler }) {

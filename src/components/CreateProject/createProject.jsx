@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { v4 as id } from "uuid";
 import PopUpHipster from "./PopUpHipster";
 import PopUpHacker from "./PopUpHacker";

@@ -1,4 +1,3 @@
-import React from 'react'
 import FtHipster from '../../assets/img/Hipster.png'
 
 export default function PopUpHipster({ setShowHipster }) {

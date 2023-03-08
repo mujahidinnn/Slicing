@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import createProjectCard from "../../assets/img/CreateProjectCard.png";
 
@@ -13,7 +12,7 @@ const CreateProjectCard = () => {
           Publish projectmu dan dapatkan co-founder yang sesuai
         </p>
         <Link to="/dashboard/createproject">
-          <button className="py-2 px-1 border rounded-lg text-white bg-teal-500">
+          <button className="p-2 border rounded-lg text-white bg-teal-500">
             Buat Project
           </button>
         </Link>

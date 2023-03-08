@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import invisibleIcon from '../../assets/icons/invisible.svg'
 import message from '../../assets/icons/message.svg'
 import lock from '../../assets/icons/padlock 1.svg'
@@ -40,7 +40,7 @@ function Register(props) {
 	}
 
 	return (
-		<div className='relative z-[10] sm:px-[10%] lg:px-[6%] sm:pb-5 lg:pb-8 sm:pt-4 lg:pt-[3%] lg:opacity-90 bg-white lg:border lg:border-[#CDCDCD] lg:shadow-[0_1px_4px_0_rgba(0,0,0,0.25)] min-h-full w-full rounded-[4%]'>
+		<div id='form' className='relative z-[10] sm:px-[10%] lg:px-[6%] sm:pb-5 lg:pb-8 sm:pt-4 lg:pt-[3%] lg:opacity-90 bg-white lg:border lg:border-[#CDCDCD] lg:shadow-[0_1px_4px_0_rgba(0,0,0,0.25)] min-h-full w-full rounded-[4%]'>
 			<form onSubmit={handleSubmit}>
 				<h1 className='text-4xl sm:text-6xl lg:text-[2em] xl:text-[2.5em] 2xl:text-[3em] 3xl:text-[3.5em] 4xl:text-[5em] 5xl:text-[7em] 6xl:text-[8.5em] font-bold text-[#22A6B3] sm:leading-10 lg:leading-3 xl:leading-8 2xl:leading-none lg:mt-5 4xl:mt-10'>
 					Daftar

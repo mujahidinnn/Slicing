@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
 
 const ProjectList = ({ filteredProject }) => {
@@ -16,7 +15,7 @@ const ProjectList = ({ filteredProject }) => {
 				Explore!
 			</h1>
 
-			<div className='flex flex-wrap justify-between mt-10 gap-y-8 pr-2'>
+			<div className='flex flex-wrap justify-between mt-10 gap-y-8'>
 				{filteredProject.length !== 0 ? (
 					filtered
 				) : (

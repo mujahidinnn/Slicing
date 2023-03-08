@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import avatar from "../../assets/img/avatar-2.png";
 import search from "../../assets/icons/search.svg";
 import ModalDetailMyProject from "./ModalDetailMyProject";
@@ -50,7 +50,7 @@ const CardProjectIMade = () => {
                 </div>
               </div>
               <div className="bg-slate-200 h-px w-auto" />
-              <div className="flex justify-between leading-7 mt-6">
+              <div className="flex flex-col md:flex-row gap-3 justify-between leading-7 mt-6">
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-4 overflow-hidden">
                     <img
@@ -69,13 +69,13 @@ const CardProjectIMade = () => {
                       alt=""
                     />
                   </div>
-                  <p className="text-teal-500 text-xs md:text-sm">
+                  <p className="text-teal-500 text-sm">
                     {item.applyer} Orang mendaftar
                   </p>
                 </div>
                 <div
                   onClick={() => setShowDetail(true)}
-                  className="flex bg-teal-500 text-white px-2 py-0 md:px-5 md:py-2 cursor-pointer rounded-xl text-sm md:text-base items-center"
+                  className="w-max md:w-auto flex bg-teal-500 text-white px-2 py-1 md:py-0 cursor-pointer rounded-xl text-base items-center"
                 >
                   Lihat Detail
                 </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import FtHacker from '../../assets/img/Hacker.png'
 
 export default function PopUpHacker({ setShowHacker }) {

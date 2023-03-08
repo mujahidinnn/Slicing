@@ -1,4 +1,3 @@
-import React from 'react'
 import search from '../../assets/icons/search.svg'
 import CardsProjectApplied from './CardProjectApplied'
 import CardProjectIMade from './CardProjectIMade'

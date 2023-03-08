@@ -5,7 +5,6 @@ import {
 } from "react-icons/ai";
 import { MdNotificationsNone } from "react-icons/md";
 import { IoMdExit } from "react-icons/io";
-// hamburger
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 import Popup from "./PopupLogout";
@@ -26,17 +25,21 @@ const Hamburger = () => {
         <HiOutlineMenuAlt2
           size={30}
           onClick={() => setShow(!show)}
-          className="cursor-pointer"
+          className="cursor-pointer select-none"
         />
-        <p className="text-[#22A6B3] font-semibold text-lg">
+        <p className="text-[#22A6B3] font-semibold text-lg pr-2 select-none">
           {pathname === "/dashboard/explore"
             ? "Explore"
             : pathname === "/dashboard/myproject"
             ? "Proyek Saya"
             : pathname === "/dashboard/myprofile"
             ? "Profil Saya"
+            : pathname === "/dashboard/editprofile"
+            ? "Edit Profil"
             : pathname === "/dashboard/notification"
             ? "Notifikasi"
+            : pathname === "/dashboard/createproject"
+            ? "Buat Proyek"
             : null}
         </p>
       </div>
@@ -47,20 +50,22 @@ const Hamburger = () => {
           } fixed z-[999] top-0 transition-all duration-500 ease-in-out py-10 overflow-hidden h-screen border-r w-[80%] bg-white shadow-md rounded-tr-xl rounded-br-xl`}
         >
           <div
-            className="float-right relative -top-5 right-5 text-gray-700 text-3xl cursor-pointer"
+            className="float-right relative -top-5 right-5 text-gray-700 text-3xl cursor-pointer select-none"
             onClick={() => setShow(!show)}
           >
             ×
           </div>
-          <div className="flex h-[80vh] flex-col justify-between pt-2 pb-6">
+          <div className="flex h-[80vh] flex-col justify-between pt-2 pb-6 select-none">
             <div className="my-10">
-              <div className="m-2 relative flex items-center gap-[10px]">
-                <img src={profile} alt="" className="ml-2" />
-                <div>
-                  <span className="font-semibold">Vellya Riona</span>
-                  <p className="text-sm">vellyariona@gmail.com</p>
+              <Link to="/dashboard/myprofile" onClick={() => setShow(false)}>
+                <div className="m-2 mr-0 relative flex items-center gap-[10px]">
+                  <img src={profile} alt="" className="ml-2" />
+                  <div>
+                    <span className="font-semibold">Vellya Riona</span>
+                    <p className="text-sm">vellyariona@gmail.com</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <ul className="mt-6 space-y-2 tracking-wide text-xl">
                 <li className="min-w-max">
                   <Link

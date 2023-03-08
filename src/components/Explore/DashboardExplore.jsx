@@ -1,4 +1,3 @@
-import React from 'react'
 import CreateProjectCard from './CreateProjectCard'
 import ProjectList from './ProjectList'
 import ProjectSearch from './ProjectSearch'

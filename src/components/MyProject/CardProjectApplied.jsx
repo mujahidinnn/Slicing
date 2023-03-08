@@ -1,4 +1,3 @@
-import React from "react";
 import avatar from "../../assets/img/avatar-1.png";
 import avatar2 from "../../assets/img/avatar-2.png";
 import search from "../../assets/icons/search.svg";

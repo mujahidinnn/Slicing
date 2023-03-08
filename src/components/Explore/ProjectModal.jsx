@@ -1,4 +1,3 @@
-import React from 'react'
 import { SlMagnifier } from 'react-icons/sl'
 import { BiTimeFive } from 'react-icons/bi'
 import { BsX } from 'react-icons/bs'
@@ -9,7 +8,7 @@ const ProjectModal = ({ title, program, category, desc, hacker, hipster }) => {
 	const { setProjectModal, showEmailModal } = useStateContext()
 	return (
 		<>
-			<div className='animate-zoom-out justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
+			<div className='animate-zoom-out bg-[rgba(0,0,0,0.25)] justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
 				<div className='relative w-auto my-6 mx-auto max-w-6xl'>
 					<div
 						className='bg-[#FCFBFF] rounded-xl p-10 w-full z-50 '

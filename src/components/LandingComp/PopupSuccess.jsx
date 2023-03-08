@@ -1,4 +1,3 @@
-import React from "react";
 import popup from "../../assets/img/popup.png";
 import close from "../../assets/icons/close-x.svg";
 

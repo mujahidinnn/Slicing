@@ -1,24 +1,23 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import edtf from "../../../src/assets/icons/Edit.svg";
 import edtp from "../../../src/assets/icons/Edit.svg";
 import gml from "../../../src/assets/icons/Pesan.svg";
 function ProfileSaya() {
   return (
-    <div className="bg-slate-100 h-screen">
+    <div className="bg-slate-100 h-full xl:h-screen">
       <div className="flex justify-between pt-20 px-2">
-        <h1 className="text-5xl font-semibold mb-[30px] px-2">Profil Saya</h1>
-        <div className="bg-[#22A6B3] rounded-lg px-3 flex h-10 gap-2">
-          <img src={edtp} alt="tombol edit profil" className="w-6" />
-          <Link to="/dashboard/editprofile">
-            <button className="text-[#FCFBFF] pt-2">Edit Profile Saya</button>
-          </Link>
-        </div>
+        <h1 className="text-4xl font-semibold mb-[30px] px-2">Profil Saya</h1>
+        <Link to="/dashboard/editprofile" className="pr-4">
+          <div className="bg-[#22A6B3] rounded-lg px-3 flex items-center h-10 gap-2">
+            <img src={edtp} alt="tombol edit profil" className="w-6" />
+            <p className="text-[#FCFBFF] hidden md:block">Edit Profile Saya</p>
+          </div>
+        </Link>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between gap-5 px-4 pt-4">
-        <div className="rounded-[20px] bg-[#DDEEF3] w-[100%] px-10 py-5">
+      <div className="flex flex-col lg:flex-row justify-between gap-6 px-4 pt-4">
+        <div className="rounded-[20px] bg-[#DDEEF3] w-full p-5">
           <div className="flex">
-            <div className="bg-green-400 rounded-full w-[91px] h-[88px] pt-[67px] pl-14">
+            <div className="bg-green-400 rounded-full w-[90px] h-[90px] pt-[67px] pl-14">
               <img
                 src={edtf}
                 alt="tombol edit foto profil"
@@ -53,7 +52,7 @@ function ProfileSaya() {
           </div>
         </div>
         {/* content-rigth */}
-        <div className="pl-[80px]">
+        <div>
           <div>
             <h1 className="font-semibold text-xl text-[#22A6B3]">Pendidikan</h1>
             <p className="pt-2">
@@ -105,7 +104,7 @@ function ProfileSaya() {
           </div>
         </div>
       </div>
-      {/* <div className="h-[5vh]"/> */}
+      <div className="h-[5vh] lg:h-0"/>
     </div>
   );
 }

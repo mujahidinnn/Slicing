@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../assets/logo/logo-team-up.png";
 import Image from "../../assets/img/404.png";
 import { Link } from "react-router-dom";

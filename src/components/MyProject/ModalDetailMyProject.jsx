@@ -1,4 +1,3 @@
-import React from "react";
 import clock from "../..//assets/icons/clock.svg";
 import search from "../../assets/icons/search.svg";
 import avatar from "../../assets/img/avatar-1.png";
@@ -89,7 +88,7 @@ const ModalDetailMyProject = ({ setShowDetail }) => {
         return (
           <div key={id}>
             <div className="animate-zoom-out bg-[rgba(0,0,0,0.5)] fixed inset-0 z-[99999] m-auto flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative  m-auto mt-[5%] w-auto max-w-[96%] lg:max-w-[60%]">
+              <div className="relative  m-auto w-auto max-w-[96%] lg:max-w-[60%]">
                 {/*content*/}
                 <div className="bg-white flex w-full py-5 flex-col rounded-2xl border-0 shadow-lg outline-none focus:outline-none">
                   {/*header*/}

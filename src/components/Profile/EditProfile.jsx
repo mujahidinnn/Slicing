@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ugh from "../../assets/icons/Unggah.svg";
 import Modal from "../../components/Profile/Modal";
 
@@ -31,8 +31,8 @@ function EditProfile() {
 
   return (
     <div className="animate-to-right bg-slate-100 lg:h-screen">
-      <div className="px-4 pt-14">
-        <h1 className="text-5xl font-semibold mb-[30px]">Edit Profil Saya</h1>
+      <div className="px-4 pt-20">
+        <h1 className="text-4xl font-semibold mb-[30px]">Edit Profil Saya</h1>
       </div>
 
       <div className="flex flex-col lg:flex-row justify-start px-4 pt-6 pr-[3%] gap-20">

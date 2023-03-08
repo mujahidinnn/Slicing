@@ -13,7 +13,7 @@ const Notification = () => {
 						return (
 							<div
 								key={notif.id}
-								className='bg-white p-3 w-[98%] rounded-xl border-l-[10px] border-[#DDEEF3] mt-5 hover:border-teal-500 hover:bg-[#DDEEF3]'>
+								className='bg-white p-3 w-[98%] rounded-xl border-l-[10px] border-[#B1DAE7] mt-5 hover:border-teal-400 hover:bg-[#DDEEF3]'>
 								<div className='flex flex-col lg:flex-row items-start lg:items-center justify-between'>
 									<div>
 										<p className='text-[#22A6B3]'>{notif.title}</p>

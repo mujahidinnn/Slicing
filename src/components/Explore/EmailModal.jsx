@@ -1,4 +1,3 @@
-import React from 'react'
 import sendEmailSucess from '../../assets/img/SendEmailSuccess.png'
 import { BsX } from 'react-icons/bs'
 import { useStateContext } from '../../context/StateContext'

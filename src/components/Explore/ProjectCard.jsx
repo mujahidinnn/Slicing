@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { SlMagnifier } from "react-icons/sl";
 import profile from "../../assets/img/profile.jpg";
 import ProjectModal from "./ProjectModal";
@@ -34,7 +34,7 @@ const ProjectCard = ({
         </span>
       </div>
 
-      <div className="px-10 py-3 mt-2">
+      <div className="px-5 py-3 mt-2">
         <h1 className="text-[19px] font-bold">{title}</h1>
         <p>{category}</p>
 
@@ -57,43 +57,41 @@ const ProjectCard = ({
         <hr className="mt-5 border-[1px]" />
       </div>
 
-      <div className="flex w-full px-8 justify-between">
-        <div className="flex relative w-[60%]">
-          <img
-            src={profile}
-            alt="profile"
-            className="w-[32px] rounded-[50%] z-10 absolute top-1 left-0 border-white border-2 opacity-60"
-          />
-          <img
-            src={profile}
-            alt="profile"
-            className="w-[32px] rounded-[50%] z-20 absolute top-1 left-[15px] border-white border-2 opacity-80"
-          />
-          <img
-            src={profile}
-            alt="profile"
-            className="w-[32px] rounded-[50%] z-30 absolute top-1 left-[32px] border-white border-2"
-          />
-          <p className="text-teal-500 text-[14px] self-center ml-[4.5rem]">
-            69 Orang Mendaftar
-          </p>
+      <div className="flex flex-col md:flex-row gap-3 justify-between leading-7 mt-3 px-5">
+        <div className="flex items-center gap-3">
+          <div className="flex -space-x-4 overflow-hidden">
+            <img
+              className="inline-block h-8 w-8 rounded-full ring-2 ring-[#ffff]"
+              src={profile}
+              alt=""
+            />
+            <img
+              className="inline-block h-8 w-8 rounded-full ring-2 ring-[#ffff]"
+              src={profile}
+              alt=""
+            />
+            <img
+              className="inline-block h-8 w-8 rounded-full ring-2 ring-[#ffff]"
+              src={profile}
+              alt=""
+            />
+          </div>
+          <p className="text-teal-500 text-sm">69 Orang mendaftar</p>
         </div>
 
-        <div className="flex justify-end items-center w-[30%]">
-          <button
-            className="py-2 w-full bg-teal-500 text-white rounded-lg"
-            onClick={() =>
-              getData(title, program, category, desc, hacker, hipster)
-            }
-          >
-            Lihat Detail
-          </button>
-        </div>
+        <button
+          className="w-max md:w-auto flex bg-teal-500 text-white px-2 py-1 md:py-0 cursor-pointer rounded-xl text-base items-center"
+          onClick={() =>
+            getData(title, program, category, desc, hacker, hipster)
+          }
+        >
+          Lihat Detail
+        </button>
       </div>
 
       {projectModal ? <ProjectModal {...project} /> : null}
 
-      {emailModal ? <EmailModal />:null}
+      {emailModal ? <EmailModal /> : null}
     </div>
   );
 };

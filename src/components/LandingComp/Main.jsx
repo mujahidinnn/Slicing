@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import img from '../../assets/img/img_landingpage.png'
 import logo from '../../assets/logo/logo_medium.svg'
 import Navbar from './Navbar'

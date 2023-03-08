@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import logo2 from "../../../src/assets/img/popup.png";
 
@@ -12,9 +11,9 @@ const Modal = ({ visible, onClose }) => {
   return (
     <div
       onClick={handleOnClose}
-      className="animate-zoom-out bg-[rgba(0,0,0,0.25)] fixed inset-0 z-50 flex justify-center items-center"
+      className="animate-zoom-out bg-[rgba(0,0,0,0.25)] fixed inset-0 z-[99999] flex justify-center items-center"
     >
-      <div className="relative bg-white p-2 rounded-3xl w-[750px] ">
+      <div className="relative bg-white p-2 rounded-3xl w-[80%] md:w-[60%] lg:w-[50%]">
         <Link to="/dashboard/myprofile">
           <button
             onClick={onClose}
@@ -23,14 +22,14 @@ const Modal = ({ visible, onClose }) => {
             &times;
           </button>
         </Link>
-        <div className="flex justify-around items-center">
-          <img src={logo2} alt="logo silang" className="h-[247px] " />
-          <p className="text-2xl text-[#22A6B3] pr-16 leading-8">
+        <div className="flex flex-col lg:flex-row justify-around items-center">
+          <img src={logo2} alt="logo silang" />
+          <p className="text-2xl text-[#22A6B3] leading-8 text-center lg:text-left">
             <span className="font-bold">
-              Berhasil memperbarui <br /> profil.
+              Berhasil memperbarui profil.
+              <br />
             </span>
-            Pastikan profil anda <br /> selalu terupdate sebelum <br /> melamar
-            proyek.
+            Pastikan profil anda selalu terupdate sebelum melamar proyek.
           </p>
         </div>
       </div>

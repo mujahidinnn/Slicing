@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import avatar from "../../assets/img/3D00868 1.png";
 import photo from "../../assets/img/user.png";
 import ProjectCard from "./ProjectCard";
@@ -8,7 +8,7 @@ function Tentang() {
   const [modal, setModal] = useState(false);
 
   const toogle = () => {
-    setModal(!modal);
+    setModal(true);
   };
 
   const modalInactive = () => {
@@ -109,7 +109,7 @@ function Tentang() {
                     className="rounded-full w-10 sm:w-12 lg:w-10 2xl:w-[3.5rem] 3xl:w-[3.75rem] 4xl:w-[4.75rem] 5xl:w-[6.75rem] 6xl:w-[9em]"
                   />
                 </div>
-                <div className="ml-3 lg:ml-[4.5%] 2xl:ml-[3.5%] ">
+                <div className="ml-3 lg:ml-[4.5%] 2xl:ml-[3.5%]">
                   <h1 className="font-bold sm:text-xl lg:text-sm xl:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl 5xl:text-5xl 6xl:text-[4em] ">
                     {data.user}
                   </h1>
