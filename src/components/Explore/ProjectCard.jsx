@@ -26,7 +26,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className=" w-[98%] lg:w-[48%] lg:h-[300px]  bg-[#FCFBFF] rounded-xl p-2">
+    <div className=" w-full lg:w-[48%] lg:h-[300px]  bg-[#FCFBFF] rounded-xl p-2">
       <div className="flex w-full justify-between px-8 font-semibold  items-center mt-2">
         <p className="tracking-wider text-teal-500">{program}</p>
         <span className="text-[13px] bg-teal-100 p-1 rounded-xl w-[80px] text-center text-teal-500">
