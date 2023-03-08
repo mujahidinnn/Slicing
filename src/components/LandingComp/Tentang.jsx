@@ -85,7 +85,7 @@ function Tentang() {
 
       <img
         src={avatar}
-        className="absolute w-[37%] top-[20%] sm:top-[13%] lg:top-0 right-0"
+        className="absolute w-[50%] lg:w-[30%] top-[20%] sm:top-[13%] lg:top-0 right-0"
       />
       <div className="2xl:leading-[5rem] 3xl:leading-[6rem] 4xl:leading-[7.5rem] 5xl:leading-[12rem] 6xl:leading-[16rem] text-2xl sm:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl 5xl:text-[8.5em] 6xl:text-[12em] sm:leading-[60px] text-center mt-20 lg:mt-[12%] text-[#22A6B3]">
         <h1>
@@ -134,7 +134,7 @@ function Tentang() {
           );
         })}
       </div>
-      {modal ? <PopupRegister toogle={modalInactive} /> : null}
+      {modal ? <PopupRegister modalInactive={modalInactive} /> : null}
       <div className="text-center text-[#22A6B3] mb-10 3xl:mt-5 4xl:mt-6 5xl:mt-20 ">
         <button onClick={toogle}>
           <p className="sm:text-xl lg:text-base xl:text-lg 2xl:text-2xl 3xl:text-3xl 4xl:text-[2.5em] 5xl:text-[3.5em] 6xl:text-[4.5em] ">

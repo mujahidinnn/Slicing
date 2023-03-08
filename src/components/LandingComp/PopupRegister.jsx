@@ -7,7 +7,7 @@ function PopupRegister(props) {
       <div className="animate-zoom-out fixed flex justify-center items-center z-[100] bg-[rgba(0,0,0,0.27)] inset-0">
         <div className="relative bg-white px-5 pb-5 sm:pb-[2.5%] sm:px-11 lg:px-[3%] w-[90%] sm:w-[500px] sm:h-[500px] lg:h-min lg:w-[40%] rounded-2xl xl:rounded-3xl 2xl:rounded-[30px] 4xl:rounded-[48px] 6xl:rounded-[80px] ">
           <div
-            onClick={props.toogle}
+            onClick={props.modalInactive}
             className="absolute right-[4%] top-[4%] cursor-pointer text-[#9B9B9B]"
           >
             <img
@@ -25,25 +25,27 @@ function PopupRegister(props) {
             untuk melihat lebih banyak!
           </h3>
 
-          <p className="text-black mt-2 sm:mt-[1%] 3xl:mt-[3%] text-sm sm:text-base lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-[1.6em] 4xl:text-[2.2em] 5xl:text-[3em] 6xl:text-[4.25em] 3xl:leading-[2rem] 4xl:leading-[3rem] 5xl:leading-[4rem] 6xl:leading-[5rem] ">
+          <p className="text-black mt-2 sm:mt-[1%] 3xl:mt-[3%] text-sm sm:text-base lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-[1.6em] 4xl:text-[2.2em] 5xl:text-[3em] 6xl:text-[4.25em] 3xl:leading-[2rem] 4xl:leading-[3rem] 5xl:leading-[4rem] 6xl:leading-[5rem] mb-5">
             Jika Anda sudah memiliki akun terdaftar,
             <br />
             Anda bisa{" "}
             <a
-              onClick={props.toogle}
-              href={window.innerWidth < 1024 ? "#footer" : "#"}
+              onClick={props.modalInactive}
+              href={window.innerWidth > 1024 ? "#" : "#footer"}
             >
               <button className="font-bold text-[#22A6B3]">
                 Masuk di sini!
               </button>{" "}
             </a>
           </p>
-          <button
-            onClick={props.toogle}
-            className="mt-6 sm:mt-[4%] text-white lg:text-sm xl:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-4xl 5xl:text-6xl bg-[#22A6B3] hover:bg-[#1A7F89] font-bold rounded-lg 2xl:rounded-[1rem] 4xl:rounded-[2rem] py-3 lg:py-[3%] px-16 lg:px-[17%]"
+
+          <a
+            href={window.innerWidth > 1024 ? "#" : "#footer"}
+            onClick={props.modalInactive}
+            className="mt-10 lg:mt-6 text-white lg:text-sm xl:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-4xl 5xl:text-6xl bg-[#22A6B3] hover:bg-[#1A7F89] font-bold rounded-lg 2xl:rounded-[1rem] 4xl:rounded-[2rem] py-3 lg:py-[3%] px-16 lg:px-[17%]"
           >
-            <a href={window.innerWidth > 1024 ? "#footer" : "#"}>Daftar</a>
-          </button>
+            Daftar
+          </a>
         </div>
       </div>
     </div>
