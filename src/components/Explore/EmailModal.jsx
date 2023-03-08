@@ -6,7 +6,7 @@ const EmailModal = () => {
 	const { setEmailModal } = useStateContext()
 	return (
 		<>
-			<div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
+			<div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[99999] outline-none focus:outline-none'>
 				<div className='relative w-auto my-6 mx-auto max-w-6xl'>
 					<div
 						className='bg-[#FCFBFF] rounded-xl p-10 w-full z-50 flex items-center'
@@ -36,7 +36,7 @@ const EmailModal = () => {
 					</div>
 				</div>
 			</div>
-			<div className='opacity-25 fixed inset-0 z-40 bg-black'></div>
+			<div className='opacity-25 fixed inset-0 z-[9999] bg-black/50'></div>
 		</>
 	)
 }

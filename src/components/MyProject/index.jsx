@@ -5,8 +5,8 @@ import CardProjectIMade from './CardProjectIMade'
 const MyProject = () => {
 	return (
 		<div className='bg-slate-100 '>
-			<div className='bg-slate-100 min-h-screen px-4 lg:px-2 pt-12'>
-				<div className='mt-5 flex justify-between items-center bg-white max-w-xs md:max-w-sm p-3 gap-4 rounded-full mb-5'>
+			<div className='bg-slate-100 min-h-screen px-2 lg:px-10 pt-12'>
+				<div className='mt-8 flex justify-between items-center bg-white max-w-xs md:max-w-sm p-3 gap-4 rounded-full mb-5'>
 					<input
 						type='text'
 						placeholder='Search'
@@ -37,7 +37,7 @@ const MyProject = () => {
 						Proyek yang Saya Lamar
 					</h3>
 					{/* Card project yang saya lamar */}
-					<div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 items-center place-content-center justify-items-center'>
+					<div className='grid grid-cols-1 md:grid-cols-2 gap-5 items-center place-content-center justify-items-center'>
 						<CardsProjectApplied />
 					</div>
 				</>

@@ -84,10 +84,10 @@ function Role() {
                 {data.role}
               </h1>
 
-              <h3 className="2xl:mt-1 3xl:mt-2.5 4xl:mt-5 5xl:mt-12 6xl:mt-16 font-[600] text-sm sm:text-xl lg:text-sm xl:text-base 2xl:text-[1.3em] 3xl:text-[1.55em] 4xl:text-[2.05em] 5xl:text-[3.1em] 6xl:text-[4.1em] text-center">
+              <h3 className="2xl:mt-1 3xl:mt-2.5 4xl:mt-5 5xl:mt-12 6xl:mt-16 text-sm sm:text-xl lg:text-sm xl:text-base 2xl:text-[1.3em] 3xl:text-[1.55em] 4xl:text-[2.05em] 5xl:text-[3.1em] 6xl:text-[4.1em] text-center">
                 {data.as}
               </h3>
-              <p className="mt-3 lg:mt-1 xl:mt-2 2xl:mt-4 4xl:mt-6 5xl:mt-10 6xl:mt-16 text-sm sm:text-xl lg:text-sm xl:text-base 2xl:text-[1.3em] 3xl:text-[1.55em] 4xl:text-[2.05em] 5xl:text-[3.1em] 6xl:text-[4.1em] 3xl:leading-9 4xl:leading-[145%] ">
+              <p className="text-gray-700 mt-3 lg:mt-1 xl:mt-2 2xl:mt-4 4xl:mt-6 5xl:mt-10 6xl:mt-16 text-sm sm:text-xl lg:text-sm xl:text-base 2xl:text-[1.3em] 3xl:text-[1.55em] 4xl:text-[2.05em] 5xl:text-[3.1em] 6xl:text-[4.1em] 3xl:leading-9 4xl:leading-[145%] ">
                 {data.desc}
               </p>
             </div>

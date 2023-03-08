@@ -19,7 +19,7 @@ const CardsProjectApplied = () => {
       program: "IA TALENT",
       nameproject: "Website Kursus Bahasa Inggris",
       category: "Pendidikan",
-      desc: "Website ini bertujuan untuk menjadi wadah bagi pelajar",
+      desc: "Website ini bertujuan untuk menjadi wadah berbagai masyarakat lorem ipsum sit",
       need: "3 Hacker, 2 Hipster",
       avatarApplyer: [avatar, avatar2],
       applyer: "43",
@@ -41,7 +41,7 @@ const CardsProjectApplied = () => {
       program: "IA TALENT",
       nameproject: "Website Arisan",
       category: "Trading",
-      desc: "Website ini bertujuan untuk menjadi wadah berbagai masyarakat lorem ipsum sit",
+      desc: "Websiteyarakat lorem ipsum sit",
       need: "5 Hacker, 4 Hipster, 2 Hustler",
       avatarApplyer: [avatar, avatar2],
       applyer: "33",
@@ -53,8 +53,8 @@ const CardsProjectApplied = () => {
     <>
       {Card.map((data, index) => {
         return (
-          <div key={index}>
-            <div className="flex flex-col max-w-xl bg-white p-5 rounded-lg">
+          <div key={index} className="w-full">
+            <div className="flex flex-col bg-white p-5 rounded-lg w-full lg:h-[300px]">
               <div className="flex justify-between mb-2">
                 <h4 className="font-semibold text-md text-teal-500">
                   {data.program}
