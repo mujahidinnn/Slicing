@@ -8,7 +8,7 @@ function ProfileSaya() {
       <div className="flex justify-between pt-20 px-2">
         <h1 className="text-4xl font-semibold mb-[30px] px-2">Profil Saya</h1>
         <Link to="/dashboard/editprofile" className="pr-4">
-          <div className="bg-[#22A6B3] rounded-lg px-3 flex items-center h-10 gap-2">
+          <div className="bg-[#22A6B3] rounded-lg px-2 flex items-center h-10 gap-2">
             <img src={edtp} alt="tombol edit profil" className="w-6" />
             <p className="text-[#FCFBFF] hidden md:block">Edit Profile Saya</p>
           </div>
