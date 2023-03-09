@@ -46,7 +46,7 @@ const Navbar = (props) => {
           }`}
         >
           <a
-            href="#"
+            href={window.innerWidth >= 1024 ? `#tentang` : `#`}
             className="text-[#DCDCDC] duration-500 sm:duration-[0s]"
           >
             <li

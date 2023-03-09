@@ -15,7 +15,7 @@ function ProfileSaya() {
         </Link>
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-6 px-4 pt-4">
-        <div className="rounded-[20px] bg-[#DDEEF3] w-full p-5">
+        <div className="rounded-[20px] bg-[#DDEEF3] w-full lg:w-[40%] p-5">
           <div className="flex">
             <div className="bg-green-400 rounded-full w-[90px] h-[90px] pt-[67px] pl-14">
               <img
@@ -52,7 +52,7 @@ function ProfileSaya() {
           </div>
         </div>
         {/* content-rigth */}
-        <div>
+        <div className="w-[60%]">
           <div>
             <h1 className="font-semibold text-xl text-[#22A6B3]">Pendidikan</h1>
             <p className="pt-2">
@@ -104,7 +104,7 @@ function ProfileSaya() {
           </div>
         </div>
       </div>
-      <div className="h-[5vh] lg:h-0"/>
+      <div className="h-[5vh] lg:h-0" />
     </div>
   );
 }

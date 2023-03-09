@@ -11,7 +11,7 @@ const ProjectList = ({ filteredProject }) => {
         Explore!
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-8 lg:gap-14 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center place-content-center justify-items-center">
         {filteredProject.length !== 0 ? (
           filtered
         ) : (
